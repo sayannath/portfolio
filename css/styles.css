@@ -10112,3 +10112,12 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+@media (max-width: 767px) {
+  .bitemoji {
+    position: inherit !important;
+  }
+  .lead{
+    margin-top: -100px;
+  }
+}
