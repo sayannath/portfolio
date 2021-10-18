@@ -23,7 +23,7 @@
     }
   });
 
-  // Closes responsive menu when a scroll trigger link is clicked
+  // Closes responsive menu when a scroll trigger link is Clicked
   $(".js-scroll-trigger").click(function () {
     $(".navbar-collapse").collapse("hide");
   });
