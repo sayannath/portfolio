@@ -73,7 +73,7 @@ export default function SideNav() {
   };
 
   return (
-    <nav className="fixed left-6 top-0 bottom-0 z-50 flex flex-col justify-center gap-6">
+    <nav className="hidden sm:flex fixed left-4 sm:left-6 top-0 bottom-0 z-50 flex-col justify-center gap-6">
       {ITEMS.map(item => {
         const isActive =
           item.type === "page"
