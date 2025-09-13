@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={`${inter.variable} min-h-screen antialiased
                     bg-white text-neutral-900
-                    dark:bg-[#0b0b0b] dark:text-neutral-100
+                    dark:bg-[#000000FF] dark:text-neutral-100
                     transition-colors`}
       >
         <Providers>
