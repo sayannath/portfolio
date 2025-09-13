@@ -1,51 +1,30 @@
 import Hero from "@/components/Hero";
+import Education from "@/components/Education";
+import Experience from "@/components/Experience";
+import Publication from "@/components/Publication";
+import Connect from "@/components/Connect";
 
 export default function Page() {
   return (
     <main>
-      {/* Section: Home */}
       <section id="home" className="relative min-h-[88vh] grid items-center">
         <Hero />
       </section>
 
-      {/* Section: About */}
-      <section id="about" className="min-h-[88vh] grid items-center">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl sm:text-4xl text-neutral-100 font-medium">About</h2>
-          <p className="mt-4 text-neutral-400 leading-relaxed">
-            I’m Sayan, working on Responsible AI & fairness-aware AutoML...
-          </p>
-        </div>
+      <section id="education" className="min-h-[88vh] grid items-center">
+        <Education />
       </section>
 
-      {/* Section: Work */}
-      <section id="work" className="min-h-[88vh] grid items-center">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl sm:text-4xl text-neutral-100 font-medium">Selected Work</h2>
-          <p className="mt-4 text-neutral-400 leading-relaxed">
-            Projects, publications, and demos…
-          </p>
-        </div>
+      <section id="experience" className="min-h-[88vh] grid items-center">
+        <Experience />
       </section>
 
-      {/* Section: Projects */}
-      <section id="projects" className="min-h-[88vh] grid items-center">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl sm:text-4xl text-neutral-100 font-medium">Selected Work</h2>
-          <p className="mt-4 text-neutral-400 leading-relaxed">
-            Projects, publications, and demos…
-          </p>
-        </div>
+      <section id="publication" className="min-h-[88vh] grid items-center">
+        <Publication />
       </section>
 
-      {/* Section: Contact */}
-      <section id="contact" className="min-h-[88vh] grid items-center">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8">
-          <h2 className="text-3xl sm:text-4xl text-neutral-100 font-medium">Selected Work</h2>
-          <p className="mt-4 text-neutral-400 leading-relaxed">
-            Projects, publications, and demos…
-          </p>
-        </div>
+      <section id="connect" className="min-h-[88vh] grid items-center">
+        <Connect />
       </section>
     </main>
   );

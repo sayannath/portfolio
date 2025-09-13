@@ -1,3 +1,4 @@
+// src/components/SideNav.tsx
 "use client";
 
 import Link from "next/link";
@@ -10,14 +11,15 @@ type RailItem = SectionItem | PageItem;
 
 const ITEMS: RailItem[] = [
   { type: "section", sectionId: "home", label: "Home" },
-  { type: "section", sectionId: "about", label: "About" },
-  { type: "section", sectionId: "work", label: "Work" },               // scroll on /
-  { type: "section", sectionId: "projects", label: "Projects" },              // new page
-  { type: "section", sectionId: "contact", label: "Contact" },                // new page
+  { type: "section", sectionId: "education", label: "Education" },
+  { type: "section", sectionId: "experience", label: "Experience" },
+  { type: "section", sectionId: "publication", label: "Publications & Projects" },
+  { type: "section", sectionId: "connect", label: "Connect" },
 ];
 
-// ---- helpers
-function isSection(i: RailItem): i is SectionItem { return i.type === "section"; }
+function isSection(i: RailItem): i is SectionItem {
+  return i.type === "section";
+}
 
 export default function SideNav() {
   const pathname = usePathname();
@@ -26,7 +28,6 @@ export default function SideNav() {
 
   const sectionIds = useMemo(() => ITEMS.filter(isSection).map(i => i.sectionId), []);
 
-  // Observe sections only on the homepage
   useEffect(() => {
     if (pathname !== "/") return;
 
@@ -38,9 +39,7 @@ export default function SideNav() {
 
     const io = new IntersectionObserver(
       entries => {
-        const visible = entries
-          .filter(e => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        const visible = entries.filter(e => e.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
         if (visible?.target?.id) setActiveSection(visible.target.id);
       },
       { threshold: 0.4, rootMargin: "-15% 0px -35% 0px" }
@@ -68,7 +67,7 @@ export default function SideNav() {
     e.preventDefault();
     const el = document.getElementById(id);
     if (el) {
-      setActiveSection(id); // instant feedback
+      setActiveSection(id);
       el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
@@ -81,12 +80,12 @@ export default function SideNav() {
             ? pathname === item.href
             : pathname === "/" && activeSection === item.sectionId;
 
-        const tick =
-          "block w-1 h-8 transition-all duration-200 " +
-          (isActive ? "bg-white h-10" : "bg-neutral-600 hover:bg-white hover:h-10");
+        const tickBase = "block w-1 h-8 transition-all duration-200";
+        const tick = isActive
+          ? `${tickBase} bg-neutral-900 dark:bg-white h-10`
+          : `${tickBase} bg-neutral-400 hover:bg-neutral-900 dark:bg-neutral-600 dark:hover:bg-white`;
 
         if (item.type === "section") {
-          // Only render section ticks on the homepage
           if (pathname !== "/") return null;
           return (
             <a
@@ -99,10 +98,7 @@ export default function SideNav() {
           );
         }
 
-        // page link
-        return (
-          <Link key={item.href} href={item.href} aria-label={item.label} className={tick} />
-        );
+        return <Link key={item.href} href={item.href} aria-label={item.label} className={tick} />;
       })}
     </nav>
   );

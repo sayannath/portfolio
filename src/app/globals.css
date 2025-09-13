@@ -1,32 +1,58 @@
+/* src/app/globals.css */
 @import "tailwindcss";
 
+/* Font family token used by next/font (Inter) */
 :root {
   --font-inter: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
     "Apple Color Emoji", "Segoe UI Emoji";
 }
 
+/* Gentle transition between themes */
+body {
+  transition: background-color .2s ease, color .2s ease;
+}
+
+/* Text selection tint for both themes */
+::selection {
+  background: rgba(17, 24, 39, 0.08);
+  /* slate-900 / 8% */
+  color: inherit;
+}
+
+.dark ::selection {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Blinking status dot */
 .dot {
   display: inline-block;
-  width: 0.5rem;           /* size-2 */
+  width: 0.5rem;
+  /* size-2 */
   height: 0.5rem;
   border-radius: 9999px;
-  background-color: rgb(52 211 153); /* emerald-400 */
+  background-color: rgb(52 211 153);
+  /* emerald-400 */
   vertical-align: middle;
-  margin-right: 0.5rem;    /* mr-2 */
-  
-  /* blinking animation */
+  margin-right: 0.5rem;
+  /* mr-2 */
   animation: blink 7s infinite;
 }
 
 @keyframes blink {
-  0%, 50%, 100% {
+
+  0%,
+  50%,
+  100% {
     opacity: 1;
   }
-  25%, 75% {
+
+  25%,
+  75% {
     opacity: 0;
   }
 }
 
+/* Smooth internal anchor scroll */
 html {
   scroll-behavior: smooth;
 }

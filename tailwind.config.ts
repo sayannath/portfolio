@@ -1,8 +1,12 @@
 import type { Config } from "tailwindcss";
 
-
 const config: Config = {
-    content: ["./src/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
+    darkMode: "class", // enables .dark toggling via next-themes
+    content: [
+        "./src/app/**/*.{ts,tsx}",
+        "./src/components/**/*.{ts,tsx}",
+        "./src/**/*.{ts,tsx}",
+    ],
     theme: {
         extend: {
             fontFamily: {
@@ -12,4 +16,5 @@ const config: Config = {
     },
     plugins: [],
 };
+
 export default config;
