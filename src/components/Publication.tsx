@@ -35,8 +35,8 @@ const PROJECTS: Project[] = [
             "A fairness-aware genetic algorithm framework that leverages AutoML run history to optimize hyperparameters for both accuracy and fairness.",
         tags: ["AutoML", "Genetic Algorithm", "Fairness", "Bias Mitigation"],
         links: [
-            { label: "Demo", href: "#", external: true },
-            { label: "Preprint", href: "#", external: true },
+            // { label: "Demo", href: "#", external: true },
+            // { label: "Preprint", href: "#", external: true },
         ],
     },
     {

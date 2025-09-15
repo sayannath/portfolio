@@ -1,18 +1,30 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Hero() {
+    useEffect(() => {
+    const heroSection = document.getElementById("home");
+        if (heroSection) {
+            heroSection.style.opacity = "0"; // Changed 0 to "0"
+            setTimeout(() => {
+                heroSection.style.transition = "opacity 0.5s ease-in-out";
+                heroSection.style.opacity = "1"; // Changed 1 to "1"
+            }, 100);
+        }
+    }, []);
+
     return (
-        <section id="home" className="relative min-h-[88vh] flex items-center">
-            {/* Content */}
+        <section id="home" className="relative min-h-screen flex items-center p-4">
+            {/* Content Wrapper */}
             <div className="w-full mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl md:max-w-4xl lg:max-w-5xl">
-                    <p className="tracking-[0.2em] text-[10px] xs:text-xs sm:text-sm text-neutral-400 uppercase">
+                    <p className="text-xs sm:text-sm text-neutral-400 uppercase tracking-widest">
                         🚀 MSc. Research Grad.
                     </p>
 
-                    <h1 className="mt-3 text-[36px] sm:text-[56px] lg:text-[76px] leading-[0.95] font-medium text-neutral-100">
+                    <h1 className="mt-3 text-4xl sm:text-6xl lg:text-8xl leading-tight font-semibold text-neutral-100">
                         Sayan Nath
                     </h1>
 
@@ -25,9 +37,9 @@ export default function Hero() {
                     <div className="mt-7 flex flex-wrap items-center gap-3 sm:gap-4 text-sm">
                         <Link
                             href="#work"
-                            className="group inline-flex items-center gap-2 rounded border border-neutral-700 px-3 py-1.5 hover:border-neutral-500 hover:bg-neutral-900"
+                            className="group inline-flex items-center gap-2 rounded border border-neutral-700 px-4 py-2 hover:border-neutral-500 hover:bg-neutral-900 transition-colors"
                         >
-                            <svg viewBox="0 0 24 24" fill="currentColor" className="size-4 opacity-80" aria-hidden>
+                            <svg viewBox="0 0 24 24" fill="currentColor" className="size-4 opacity-80" aria-hidden="true">
                                 <path d="M4 4h16v2H4zm0 7h10v2H4zm0 7h16v2H4z" />
                             </svg>
                             <span className="font-medium">View Work</span>
@@ -35,14 +47,14 @@ export default function Hero() {
 
                         <Link
                             href="http://youtube.com/@sayannath662"
-                            className="inline-flex items-center gap-2 text-neutral-300 hover:text-white"
+                            className="inline-flex items-center gap-2 text-neutral-300 hover:text-white transition-colors"
                             target="_blank"
                             rel="noreferrer noopener"
                         >
-                            <svg viewBox="0 0 24 24" fill="currentColor" className="size-4 opacity-80" aria-hidden>
+                            <svg viewBox="0 0 24 24" fill="currentColor" className="size-4 opacity-80" aria-hidden="true">
                                 <path d="M23.498 6.186a2.97 2.97 0 00-2.09-2.103C19.425 3.5 12 3.5 12 3.5s-7.425 0-9.408.583a2.97 2.97 0 00-2.09 2.103A31.35 31.35 0 000 12c0 1.61.17 3.22.49 4.79.24.95.98 1.69 1.93 1.93C6.1 19.25 12 19.25 12 19.25s7.425 0 9.408-.583a2.97 2.97 0 002.09-2.103A31.35 31.35 0 0024 12a31.35 31.35 0 00-.502-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
                             </svg>
-                            YouTube →
+                            YouTube &rarr;
                         </Link>
                     </div>
 
