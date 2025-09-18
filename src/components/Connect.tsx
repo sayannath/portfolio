@@ -153,7 +153,7 @@ export default function Connect() {
                         </p>
                     </div>
                     <div className="flex items-center gap-6 text-sm">
-                        <ThemeToggle />
+                        {/* <ThemeToggle /> */}
                         <a
                             href="mailto:sayannath235@gmail.com"
                             className="underline underline-offset-4
