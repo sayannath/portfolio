@@ -82,8 +82,8 @@ export default function SideNav() {
 
         const tickBase = "block w-1 h-8 transition-all duration-200";
         const tick = isActive
-          ? `${tickBase} bg-neutral-900 dark:bg-white h-10`
-          : `${tickBase} bg-neutral-400 hover:bg-neutral-900 dark:bg-neutral-600 dark:hover:bg-white`;
+          ? `${tickBase} bg-white h-10`
+          : `${tickBase} bg-neutral-400 hover:bg-neutral-600 hover:bg-white`;
 
         if (item.type === "section") {
           if (pathname !== "/") return null;
