@@ -100,20 +100,20 @@ export default function Publication() {
             <div className="flex items-center gap-3">
                 {/* book icon */}
                 <svg
-                    className="w-6 h-6 text-neutral-500 dark:text-neutral-400"
+                    className="w-6 h-6 text-neutral-400"
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     aria-hidden="true"
                 >
                     <path d="M4.75 3A2.75 2.75 0 0 0 2 5.75v12.5A2.75 2.75 0 0 0 4.75 21H20V5.75A2.75 2.75 0 0 0 17.25 3H4.75Zm.25 2h12.25c.69 0 1.25.56 1.25 1.25V19H5c-.69 0-1.25-.56-1.25-1.25V6.25C3.75 5.56 4.31 5 5 5Zm3 3.25h6.5v1.5H8V8.25Zm0 3h6.5v1.5H8v-1.5Zm0 3h4v1.5H8v-1.5Z" />
                 </svg>
-                <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+                <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight text-neutral-100">
                     Projects &amp; Publications
                 </h2>
             </div>
 
             {/* Subtitle */}
-            <p className="mt-3 text-base text-neutral-600 dark:text-neutral-400 max-w-3xl">
+            <p className="mt-3 text-base text-neutral-400 max-w-3xl">
                 Selected work across fairness-aware AutoML and Computer Vision. Code and manuscripts linked where available.
             </p>
 

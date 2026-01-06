@@ -89,20 +89,20 @@ export default function Experience() {
       {/* Title + Icon */}
       <div className="flex items-center gap-3">
         <svg
-          className="w-6 h-6 text-neutral-500 dark:text-neutral-400"
+          className="w-6 h-6 text-neutral-400"
           viewBox="0 0 24 24"
           fill="currentColor"
           aria-hidden="true"
         >
           <path d="M19.14 12.94c.04-.31.06-.63.06-.94s-.02-.63-.06-.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.6-.22l-2.39.96a7.63 7.63 0 0 0-1.63-.94l-.36-2.53a.5.5 0 0 0-.5-.43h-3.84a.5.5 0 0 0-.5.43l-.36 2.53c-.58.23-1.13.54-1.63.94l-2.39-.96a.5.5 0 0 0-.6.22L2.7 7.84a.5.5 0 0 0 .12.64l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94L2.82 13.6a.5.5 0 0 0-.12.64l1.92 3.32c.13.22.39.31.6.22l2.39-.96c.5.4 1.05.72 1.63.94l.36 2.53c.05.24.26.43.5.43h3.84c.24 0 .45-.19.5-.43l.36-2.53c.58-.23 1.13-.54 1.63-.94l2.39.96c.21.09.47 0 .6-.22l1.92-3.32a.5.5 0 0 0-.12-.64l-2.03-1.58ZM12 15.5A3.5 3.5 0 1 1 12 8.5a3.5 3.5 0 0 1 0 7Z" />
         </svg>
-        <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+        <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight text-neutral-100">
           Experience
         </h2>
       </div>
 
       {/* Subtitle */}
-      <p className="mt-3 text-base text-neutral-600 dark:text-neutral-400 max-w-3xl">
+      <p className="mt-3 text-base text-neutral-400 max-w-3xl">
         Driving innovation and developer experience across multiple organizations.
       </p>
 
@@ -113,7 +113,7 @@ export default function Experience() {
             {/* Header row: company + right-aligned dates */}
             <div className="grid grid-cols-1 md:grid-cols-12 md:items-start gap-y-1">
               <div className="md:col-span-9">
-                <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+                <h3 className="text-xl font-semibold text-neutral-100">
                   {job.company}
                 </h3>
               </div>
@@ -123,7 +123,7 @@ export default function Experience() {
             </div>
 
             {/* Role */}
-            <p className="mt-3 text-neutral-700 dark:text-neutral-300">{job.role}</p>
+            <p className="mt-3 text-neutral-300">{job.role}</p>
 
             {/* Location (mono) */}
             <p className="mt-2 font-mono text-sm tracking-wide text-neutral-500">
@@ -132,13 +132,13 @@ export default function Experience() {
 
             {/* Achievements */}
             <div className="mt-8">
-              <p className="text-sm font-medium text-neutral-700 dark:text-neutral-400">
+              <p className="text-sm font-medium text-neutral-400">
                 Key Achievements:
               </p>
-              <ul className="mt-3 space-y-3 text-sm text-neutral-600 dark:text-neutral-400 max-w-3xl">
+              <ul className="mt-3 space-y-3 text-sm text-neutral-400 max-w-3xl">
                 {job.achievements.map((item) => (
                   <li key={item} className="flex gap-3">
-                    <span className="mt-2.5 inline-block size-1.5 rounded-full bg-neutral-500/70 dark:bg-neutral-500/60" />
+                    <span className="mt-2.5 inline-block size-1.5 rounded-full bg-neutral-500/60" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -153,14 +153,14 @@ export default function Experience() {
         {/* Big title with gear icon */}
         <div className="flex items-center gap-3">
           <svg
-            className="w-6 h-6 text-neutral-500 dark:text-neutral-400"
+            className="w-6 h-6 text-neutral-400"
             viewBox="0 0 24 24"
             fill="currentColor"
             aria-hidden="true"
           >
             <path d="M19.14 12.94c.04-.31.06-.63.06-.94s-.02-.63-.06-.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.6-.22l-2.39.96a7.63 7.63 0 0 0-1.63-.94l-.36-2.53a.5.5 0 0 0-.5-.43h-3.84a.5.5 0 0 0-.5.43l-.36 2.53c-.58.23-1.13.54-1.63.94l-2.39-.96a.5.5 0 0 0-.6.22L2.7 7.84a.5.5 0 0 0 .12.64l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94L2.82 13.6a.5.5 0 0 0-.12.64l1.92 3.32c.13.22.39.31.6.22l2.39-.96c.5.4 1.05.72 1.63.94l.36 2.53c.05.24.26.43.5.43h3.84c.24 0 .45-.19.5-.43l.36-2.53c.58-.23 1.13-.54 1.63-.94l2.39.96c.21.09.47 0 .6-.22l1.92-3.32a.5.5 0 0 0-.12-.64l-2.03-1.58ZM12 15.5A3.5 3.5 0 1 1 12 8.5a3.5 3.5 0 0 1 0 7Z" />
           </svg>
-          <h3 className="text-4xl sm:text-3xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+          <h3 className="text-4xl sm:text-3xl font-semibold tracking-tight text-neutral-100">
             Technical Expertise
           </h3>
         </div>
@@ -174,11 +174,11 @@ export default function Experience() {
               <svg className="w-5 h-5 text-neutral-400" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M9.4 16.6 4.8 12l4.6-4.6 1.4 1.4L7.6 12l3.2 3.2-1.4 1.4Zm5.2 0L18.8 12l-4.6-4.6-1.4 1.4L16.4 12l-3.2 3.2 1.4 1.4Z" />
               </svg>
-              <span className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+              <span className="text-lg font-semibold text-neutral-100">
                 Languages
               </span>
             </div>
-            <ul className="mt-4 space-y-3 text-neutral-600 dark:text-neutral-400">
+            <ul className="mt-4 space-y-3 text-neutral-400">
               {TECH.languages.map((x) => (
                 <li key={x}>{x}</li>
               ))}
@@ -192,11 +192,11 @@ export default function Experience() {
               <svg className="w-5 h-5 text-neutral-400" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 3 2 8l10 5 10-5-10-5Zm0 8L2 16l10 5 10-5-10-5Z" />
               </svg>
-              <span className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+              <span className="text-lg font-semibold text-neutral-100">
                 Frameworks
               </span>
             </div>
-            <ul className="mt-4 space-y-3 text-neutral-600 dark:text-neutral-400">
+            <ul className="mt-4 space-y-3 text-neutral-400">
               {TECH.frameworks.map((x) => (
                 <li key={x}>{x}</li>
               ))}
@@ -210,11 +210,11 @@ export default function Experience() {
               <svg className="w-5 h-5 text-neutral-400" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M6 19a4 4 0 0 1 0-8 5.5 5.5 0 0 1 10.7-1.7A4.5 4.5 0 1 1 18 19H6Z" />
               </svg>
-              <span className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+              <span className="text-lg font-semibold text-neutral-100">
                 Cloud &amp; Tools
               </span>
             </div>
-            <ul className="mt-4 space-y-3 text-neutral-600 dark:text-neutral-400">
+            <ul className="mt-4 space-y-3 text-neutral-400">
               {TECH.cloud.map((x) => (
                 <li key={x}>{x}</li>
               ))}
@@ -228,11 +228,11 @@ export default function Experience() {
               <svg className="w-5 h-5 text-neutral-400" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M13 2 3 14h7l-1 8 12-14h-7l-1-6Z" />
               </svg>
-              <span className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+              <span className="text-lg font-semibold text-neutral-100">
                 Specializations
               </span>
             </div>
-            <ul className="mt-4 space-y-3 text-neutral-600 dark:text-neutral-400">
+            <ul className="mt-4 space-y-3 text-neutral-400">
               {TECH.specializations.map((x) => (
                 <li key={x}>{x}</li>
               ))}
