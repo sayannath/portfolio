@@ -16,6 +16,20 @@ export default function Education() {
         <div className="space-y-8">
           <div>
             <h3 className="text-lg sm:text-xl font-semibold text-neutral-100">
+              PhD in Computer Science
+            </h3>
+            <p className="text-neutral-400">
+              University of Calgary · Computer Science
+            </p>
+            <div className="mt-2 text-sm text-neutral-400">
+              <p>GPA: TBD</p>
+              <p><strong>Research:</strong> Applied AI, Human Computer Interaction</p>
+              <p><strong>Supervisor:</strong> Dr. Aditya Shekhar Nittala</p>
+            </div>
+            <p className="mt-2 text-sm text-neutral-500">January 2026 – Present</p>
+          </div>
+          <div>
+            <h3 className="text-lg sm:text-xl font-semibold text-neutral-100">
               Master of Science (Thesis-based)
             </h3>
             <p className="text-neutral-400">
@@ -23,9 +37,10 @@ export default function Education() {
             </p>
             <div className="mt-2 text-sm text-neutral-400">
               <p>GPA: 4.0/4.0</p>
-              <p>Research: Responsible AI, LLM Research</p>
+              <p><strong>Research:</strong> Responsible AI, LLM, Machine Learning</p>
+              <p><strong>Supervisor(s):</strong> Dr. Gias Uddin & Dr. Henry Leung</p>
             </div>
-            <p className="mt-2 text-sm text-neutral-500">Fall 2023 – Present</p>
+            <p className="mt-2 text-sm text-neutral-500">Fall 2023 – December 2025</p>
           </div>
 
           <div>
@@ -38,6 +53,7 @@ export default function Education() {
             <div className="mt-2 text-sm text-neutral-400">
               <p>GPA: 9.0/10</p>
               <p>Major: Information Technology (IT)</p>
+              <p><strong>Supervisor:</strong> Dr. Suresh Chandra Satapathy</p>
             </div>
             <p className="mt-2 text-sm text-neutral-500">Summer 2019 – Spring 2023</p>
           </div>

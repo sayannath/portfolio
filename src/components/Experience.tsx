@@ -10,14 +10,24 @@ type Job = {
 
 const JOBS: Job[] = [
   {
-    company: "DISA Lab, University of Calgary",
-    role: "Graduate Research Assistant",
+    company: "DiFF Lab, iLab, University of Calgary",
+    role: "PhD Student",
     location: "Calgary, Canada",
-    period: "August 2023 – Present",
+    period: "January 2026 – Present",
     achievements: [
-      "Fairness and Accuracy in Machine Learning: Conducted in-depth research on balancing fairness and accuracy in machine learning models by implementing bias mitigation strategies. Focused on developing methodologies that enhance model fairness without compromising performance.",
-      "Collaborated with Dr. Shaina Reza from Vector Institute on Responsible AI initiatives, with a focus on large language models (LLMs). Contributing to the development of ethical and transparent AI systems by leveraging LLMs to understand and mitigate biases.",
-      "Acted as a Teaching Assistant (TA) for undergraduate and graduate courses, providing mentorship and guidance to students.",
+      "TBD",
+    ],
+  },
+  {
+    company: "DISA Lab, University of Calgary",
+    role: "MSc Research Assistant",
+    location: "Calgary, Canada",
+    period: "August 2023 – December 2025",
+    achievements: [
+      "Bias Mitigation in ML: Conducted in-depth research on balancing fairness and accuracy in machine learning models by implementing bias mitigation strategies. Focused on developing methodologies that enhance model fairness without compromising performance.",
+      "Bias Mitigation in LLM: Developed AutoFairer, an automated bias detection and sanitization framework for large language models, along with Biascore, a composite metric for quantifying bias in generated text, advancing ethical and transparent LLM systems.",
+      "Sustainability in CodeLLM:A study that estimates and analyzes the carbon emissions of code generation LLMs on HumanEval⁺ and MBPP⁺, highlighting the trade-off between coding performance and environmental sustainability.",
+      "Teaching: Acted as a Teaching Assistant (TA) for undergraduate and graduate courses, providing mentorship and guidance to students.",
     ],
   },
   {

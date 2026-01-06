@@ -23,7 +23,7 @@ const PROJECTS: Project[] = [
         title: "FairSpace",
         summary:
             "Fairness-aware AutoML pipeline that prunes the search space and integrates LLM-guided preprocessing to reach better fairness–accuracy trade-offs with modest overhead.",
-        tags: ["Python", "Auto-Sklearn", "SMAC", "DSPy", "Fairness"],
+        tags: ["Search Space Pruning", "AutoML", "LLM-Guided Preprocessing", "Fairness"],
         links: [
             //   { label: "Code", href: "#", external: true },
             //   { label: "Paper", href: "#", external: true },
@@ -37,6 +37,16 @@ const PROJECTS: Project[] = [
         links: [
             // { label: "Demo", href: "#", external: true },
             // { label: "Preprint", href: "#", external: true },
+        ],
+    },
+    {
+        title: "AutoFairer",
+        summary:
+            "Automated bias detection and sanitization framework for large language models, along with Biascore, a composite metric for quantifying bias in generated text, advancing ethical and transparent LLM systems.",
+        tags: ["LLM", "Supervised Fine-Tuning", "Fairness Metrics"],
+        links: [
+            //   { label: "Code", href: "#", external: true },
+            //   { label: "Paper", href: "#", external: true },
         ],
     },
     {

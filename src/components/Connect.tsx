@@ -92,7 +92,7 @@ export default function Connect() {
                         <a
                             href="https://scholar.google.com/citations?user=WcqkH2cAAAAJ&hl=en"
                             target="_blank"
-                            rel="noreferrer noopener"
+                            rel="noopener noreferrer"
                             className="inline-flex items-center gap-2
                          text-neutral-400 hover:text-white
                          focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-600 rounded"
@@ -109,7 +109,7 @@ export default function Connect() {
                             key={href}
                             href={href}
                             target="_blank"
-                            rel="noreferrer noopener"
+                            rel="noopener noreferrer"
                             className="group block rounded-lg border border-neutral-800
                          bg-neutral-950/40 p-4
                          hover:border-neutral-600 hover:bg-neutral-950/60
