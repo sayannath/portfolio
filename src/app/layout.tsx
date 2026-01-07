@@ -2,6 +2,7 @@ import "./globals.css";
 import { inter } from "./fonts";
 import type { Metadata } from "next";
 import SideNav from "@/components/SideNav";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: "Sayan — Portfolio",
@@ -22,6 +23,7 @@ export default function RootLayout({
       >
         <SideNav />
         {children}
+        <Analytics />
       </body>
     </html>
   );
